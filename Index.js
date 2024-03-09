@@ -1,9 +1,9 @@
-//Código criado para o teste de estágiario
-
+//Código criado para o teste de estágiario na Target.
+ 
 const input = require('prompt-sync')({sigint: true})
 
 console.log()
-
+//Resposta da primeira pergunta
 console.log("Resposta nº 1:")
 
 let indice = 13;
@@ -12,12 +12,14 @@ let k = 0;
 
 for(k = 0; k < indice; k++){
     k = k + 1;
+    console.log(k)
     soma = soma + k;       
 }
 console.log(`Soma = ${soma}`);
 
 console.log()
 
+//Resposta da segunda pergunta
 console.log("Resposta nº 2:")
 
 function pertenceFibonacci(numero) {
@@ -40,28 +42,27 @@ function pertenceFibonacci(numero) {
 
     }
 
-    console.log()
-
-    /*
-    Resposta nº 3:
-    a) 1,3,5,7,9
-    b) 2,4,8,16,32,64,128
-    c) 0,1,4,9,16,25,36,49
-    d) 4,16,36,100
-    e) 1,1,2,3,5,8,13    
-    f) 2,10,12,16,17,18,19,200
-
-    Resposta nº 4:
+console.log()
+/*
+//Resposta da terceira pergunta
+a) 1,3,5,7,9
+b) 2,4,8,16,32,64,128
+c) 0,1,4,9,16,25,36,49
+d) 4,16,36,100
+e) 1,1,2,3,5,8,13    
+f) 2,10,12,16,17,18,19,200
+//Resposta quarta pergunta
     
-    Ligo o primeiro interruptor , deixo ligado por algum tempo
-    Desligo o primeiro interruptor
-    Ligo o segundo interruptor 
-    Vou à sala 1 lâmpada ligada, então segundo interruptor controla essa  lâmpada
-    Vou para sala 2 lâmpada  desligada e fria, então terceiro interruptor controla essa lâmpada
-    E a lâmpada da sala 3 é controlado pelo primeiro interruptor
+Ligo o primeiro interruptor , deixo ligado por algum tempo
+Desligo o primeiro interruptor
+Ligo o segundo interruptor 
+Vou à sala 1 lâmpada ligada, então segundo interruptor controla essa  lâmpada
+Vou para sala 2 lâmpada  desligada e fria, então terceiro interruptor controla essa lâmpada
+E a lâmpada da sala 3 é controlado pelo primeiro interruptor
 
-    */
-   
+*/
+
+//Resposta da quinta pergunta    
 console.log("Resposta nº 5:")
 
 let str = String(input("Digite um texto: "))
