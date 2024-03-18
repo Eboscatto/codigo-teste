@@ -1,10 +1,10 @@
 //Código criado para o teste de estágiario na Target.
  
-const input = require('prompt-sync')({sigint: true})
+const input = require('prompt-sync')({sigint: true});
 
 console.log()
 //Resposta da primeira pergunta
-console.log("Resposta nº 1:")
+console.log("Resposta nº 1:");
 
 let indice = 13;
 let soma = 0;
@@ -17,32 +17,32 @@ for(k = 0; k < indice; k++){
 }
 console.log(`Soma = ${soma}`);
 
-console.log()
+console.log();
 
 //Resposta da segunda pergunta
-console.log("Resposta nº 2:")
+console.log("Resposta nº 2:");
 
 function pertenceFibonacci(numero) {
     let penultimoNumero = 0;
     let numeroAtual = 1;    
     while (numeroAtual < numero) {        
       let temp = numeroAtual;
-      numeroAtual = penultimoNumero +  numeroAtual
+      numeroAtual = penultimoNumero +  numeroAtual;
       penultimoNumero = temp;
 
     }    
     return numeroAtual === numero;    
     }
 
-    let numeroVerificar = parseInt(input("Digite o número a ser verificado: "))
+    let numeroVerificar = parseInt(input("Digite o número a ser verificado: "));
     if (pertenceFibonacci(numeroVerificar)){
-        console.log(`${numeroVerificar} pertence à sequência de Fibonacci.`)
+        console.log(`${numeroVerificar} pertence à sequência de Fibonacci.`);
     } else {
-        console.log(`${numeroVerificar} não pertence à sequência de Fibonacci.`)
+        console.log(`${numeroVerificar} não pertence à sequência de Fibonacci.`);
 
     }
 
-console.log()
+console.log();
 /*
 //Resposta da terceira pergunta
 a) 1,3,5,7,9
@@ -63,9 +63,9 @@ E a lâmpada da sala 3 é controlado pelo primeiro interruptor
 */
 
 //Resposta da quinta pergunta    
-console.log("Resposta nº 5:")
+console.log("Resposta nº 5:");
 
-let str = String(input("Digite um texto: "))
+let str = String(input("Digite um texto: "));
 let nString = "";
 let i = 0;
 for (i = str.length - 1; i >= 0; i--){
